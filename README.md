@@ -45,7 +45,7 @@ source venv/bin/activate
 3.**Install dependencies**
 pip install -r requirements.txt
 
-4. **Configure environment variables**
+4.**Configure environment variables**
 
 Create a .env file in the project root using .env.example as a template:
 
@@ -61,7 +61,8 @@ uvicorn main2:app --reload
 
 Open your browser and navigate to:
 http://127.0.0.1:8000/docs
---
+
+
 **Database Schema**
 CREATE TABLE expenses (
     id SERIAL PRIMARY KEY,
@@ -77,7 +78,8 @@ CREATE TABLE budgets (
     monthly_limit FLOAT
 );
 --
-**Example Endpoints**
+
+Example Endpoints
 Method	Endpoint	Description
 POST	/expenses	Add a new expense
 GET	/expenses	Retrieve all expenses
@@ -88,6 +90,8 @@ GET	/expenses/summary/weekly	Weekly spending summary
 GET	/expenses/summary/monthly	Monthly spending summary
 POST	/budgets	Add a new budget
 GET	/budgets/status	Compare budgets vs spending
+
+
 --
 **Future Enhancements**
 
