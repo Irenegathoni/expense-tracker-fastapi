@@ -92,7 +92,7 @@ POST	/budgets	Add a new budget
 GET	/budgets/status	Compare budgets vs spending
 
 
---
+---
 **Future Enhancements**
 
 Implement JWT authentication for secure user access
